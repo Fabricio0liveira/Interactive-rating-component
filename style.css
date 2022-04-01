@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Overpass', sans-serif;
+}
+
+:root {
+    --Orange: hsl(25, 97%, 53%);
+
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(216, 12%, 54%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+.container {
+    height: 100vh;
+    background-color: var(--Very-Dark-Blue);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+.card {
+    width: 350px;
+    height: 325px;
+    background-color: var(--Dark-Blue);
+
+    border-radius: 15px;
+    padding: 25px;
+}
+
+.invisible {
+    display: none;
+}
+
+.icon-star {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    padding: 10px;
+
+    border-radius: 18px;
+    background-color: hsl(216, 12%, 20%);
+}
+
+h2 {
+    color: var(--White);
+    font-weight: 700;
+
+    margin-bottom: 10px;
+}
+
+.text {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--Light-Grey);
+    
+    margin-bottom: 20px;
+}
+
+.rating-buttons {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.classification-numbers {
+    height: 35px;
+    width: 35px;
+
+    border: none;
+    border-radius: 50%;
+    background-color: hsl(216, 12%, 20%);
+    
+    color: var(--Light-Grey);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.classification-numbers:hover {
+    background-color: var(--Orange);
+    color: var(--White);
+}
+
+#send-rating {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px 0;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+
+    background-color: var(--Orange);
+    color: var(--White);
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.01rem;
+}
+
+#send-rating:hover {
+    background-color: var(--White);
+    color: var(--Orange);
+}
+
+/* Classification enabled */
+.rating-message {
+    text-align: center;
+}
+
+.img-thankYou {
+    width: 100px;
+    margin-top: 10px;
+}
+
+#text-rating {
+    font-size: 15px;
+    font: 400;
+    color: var(--Orange);
+
+    width: 60%;
+    height: 30px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    background-color: hsl(216, 12%, 20%);
+}
+
+.attribution {
+    position: absolute;
+    bottom: 0;
+
+    font-size: 11px; 
+    text-align: center; 
+    color: var(--Light-Grey);
+}
+
+.attribution a {
+    color: var(--Light-Grey);
+    text-decoration: none;
+}
